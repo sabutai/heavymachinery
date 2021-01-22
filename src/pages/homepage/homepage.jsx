@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './homepage.scss';
+
 import { HomePageContainer } from './homepage.styles';
 
 

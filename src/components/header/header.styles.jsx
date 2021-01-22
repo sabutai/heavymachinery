@@ -20,6 +20,11 @@ export const LogoContainer = styled(Link)`
   padding: 25px;
 `;
 
+export const Title = styled.div`
+    padding: 25px;
+    
+`;
+
 export const OptionsContainer = styled.div`
   width: 50%;
   height: 100%;

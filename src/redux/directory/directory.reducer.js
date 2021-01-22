@@ -17,18 +17,6 @@ const INITIAL_STATE = {
       imageUrl: 'https://static.tuugo.my/images/big/506/303/sewa_excavator_backhoe_johor.jpg',
       id: 3,
       linkUrl: 'shop/excavators',
-    },
-    {
-      title: 'womens',
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-      id: 4,
-      linkUrl: 'shop/womens',
-    },
-    {
-      title: 'mens',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-      id: 5,
-      linkUrl: 'shop/mens',
     }
   ]
 };

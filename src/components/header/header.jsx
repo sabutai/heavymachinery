@@ -4,9 +4,9 @@ import {createStructuredSelector} from 'reselect';
 
 import {auth} from '../../firebase/firebase.utils';
 
-import { HeaderContainer, LogoContainer, OptionsContainer, OptionDiv, OptionLink } from './header.styles';
+import { HeaderContainer, LogoContainer, Title, OptionsContainer, OptionDiv, OptionLink } from './header.styles';
 
-import { ReactComponent as Logo } from '../../assets/crown.svg';
+import { ReactComponent as Logo } from '../../assets/demolishing.svg';
 import CartIcon from '../cart-icon/cart-icon';
 import CartDropdown from '../cart-dropdown/cart-dropdown';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
@@ -17,12 +17,12 @@ const Header = ({ currentUser, hidden }) => (
     <LogoContainer to='/'>
       <Logo />
     </LogoContainer>
+    <Title>
+      HEAVY MACHINERY STORE
+    </Title>
     <OptionsContainer>
       <OptionLink to='/shop'>
         SHOP
-      </OptionLink>
-      <OptionLink to='/shop'>
-        CONTACT
       </OptionLink>
       {
         currentUser ?
