@@ -1,22 +1,22 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'Бульдозеры',
+      title: 'Bulldozers',
       imageUrl: 'https://www.strongminers.com/Resources/Products/big/cb7c3d30b2624c68ab54fc83e516e9c3.jpg',
       id: 1,
-      linkUrl: 'shop/dozers',
+      linkUrl: 'shop/bulldozers',
     },
     {
-      title: 'Самосвалы',
+      title: 'Dumptrucks',
       imageUrl: 'http://kowsh.ru/imgs5/karernyi-samosval.jpg',
       id: 2,
       linkUrl: 'shop/dumptrucks',
     },
     {
-      title: 'Эксковаторы',
+      title: 'Excavators',
       imageUrl: 'https://static.tuugo.my/images/big/506/303/sewa_excavator_backhoe_johor.jpg',
       id: 3,
-      linkUrl: 'shop/excavator',
+      linkUrl: 'shop/excavators',
     },
     {
       title: 'womens',
