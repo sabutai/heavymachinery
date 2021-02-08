@@ -12,7 +12,6 @@ class ShopPage extends React.Component {
   componentDidMount() {
     const { fetchCollectionsStartAsync } = this.props;
     fetchCollectionsStartAsync();
-
   }
 
   render() {
@@ -23,6 +22,7 @@ class ShopPage extends React.Component {
           exact
           path={`${match.path}`}
           component={CollectionOverviewContainer}
+          
         />
         <Route
           path={`${match.path}/:collectionId`}
@@ -37,7 +37,4 @@ const mapDispatchToProps = dispatch => ({
   fetchCollectionsStartAsync: () => dispatch(fetchCollectionsStartAsync())
 });
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(ShopPage);
+export default connect(null, mapDispatchToProps)(ShopPage);

@@ -1,0 +1,1 @@
+redux-persist, redux-logger, redux-thunk, reselect, react-router, hoc, styled-components

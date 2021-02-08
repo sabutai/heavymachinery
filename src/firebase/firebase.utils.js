@@ -11,7 +11,7 @@ const config = {
     storageBucket: "shop-db-9c67e.appspot.com",
     messagingSenderId: "475025273300",
     appId: "1:475025273300:web:6ea6446787320a86d2a641"
-}
+};
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
@@ -49,7 +49,7 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
   });
 
   return await batch.commit();
-}
+};
 
 
 export const convertCollectionsSnapshotToMap = (collections) => {

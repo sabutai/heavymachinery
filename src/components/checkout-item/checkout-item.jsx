@@ -5,7 +5,7 @@ import { clearItemFromCart, addItem, removeItem } from '../../redux/cart/cart.ac
 
 import { CheckoutItemContainer, ImageContainer, RemoveButton} from './checkout-item.styles';
 
-const ChekoutItem = ({ cartItem, clearItem, addItem, removeItem  }) => {
+const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem  }) => {
   const { imageUrl, price, name, quantity } = cartItem;
     return (
     <CheckoutItemContainer>
@@ -22,11 +22,12 @@ const ChekoutItem = ({ cartItem, clearItem, addItem, removeItem  }) => {
         <RemoveButton onClick={() => clearItem(cartItem)}>&#10005;</RemoveButton>
     </CheckoutItemContainer>
   );
-}
+};
+
 const mapDispatchToProps = dispatch => ({
   clearItem: item => dispatch(clearItemFromCart(item)),
   addItem: item => dispatch(addItem(item)),
   removeItem: item => dispatch(removeItem(item))
-})
+});
 
-export default connect(null, mapDispatchToProps)(ChekoutItem);
+export default connect(null, mapDispatchToProps)(CheckoutItem);
